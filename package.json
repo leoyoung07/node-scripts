@@ -1,0 +1,20 @@
+{
+  "name": "node_cmd",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bin": {
+    "hello": "index.js"
+  },
+  "dependencies": {
+    "chalk": "^2.3.2",
+    "commander": "^2.15.1",
+    "inquirer": "^5.1.0"
+  }
+}
