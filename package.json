@@ -10,9 +10,11 @@
   "author": "",
   "license": "ISC",
   "bin": {
-    "hello": "index.js"
+    "hello": "index.js",
+    "lzip": "lzip.js"
   },
   "dependencies": {
+    "archiver": "^2.1.1",
     "chalk": "^2.3.2",
     "commander": "^2.15.1",
     "inquirer": "^5.1.0"
