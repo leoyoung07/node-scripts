@@ -11,12 +11,12 @@ program
   .arguments("<srcPath>")
   .arguments("<destFile>")
   .action((srcPath, destFile) => {
-    if (srcPath.startsWith("/")) {
+    if (path.isAbsolute(srcPath)) {
       srcPath = path.resolve(srcPath);
     } else {
       srcPath = path.resolve(__dirname, srcPath);
     }
-    if (destFile.startsWith("/")) {
+    if (path.isAbsolute(destFile)) {
       destFile = path.resolve(destFile);
     } else {
       destFile = path.resolve(__dirname, destFile);
